@@ -1,0 +1,85 @@
+html,
+body {
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(50deg, #82fff8, #00cb94);
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+ul.sidenav li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    float: left;
+    padding: 15px;
+    color: white;
+}
+
+ul.sidenav li a.active {
+    background-color: #00cb94;
+    color: black;
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}
+
+#new-box {
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#new-box-back {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    min-width: 250px;
+}
+
+@media only screen and (min-width: 480px) {
+    #table-box {
+        margin: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #table-box-back {
+        padding: 10px;
+        width: 100%;
+        max-width: 500px;
+        min-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #table-box {
+        margin: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #table-box-back {
+        padding: 10px;
+        width: 100%;
+        max-width: 500px;
+        min-width: 250px;
+    }
+}

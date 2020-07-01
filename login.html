@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>LogIn Screen</title>
+</head>
+
+<body>
+
+    <div class="container" id="login-center">
+        <div class="container rounded" id="login-box">
+            <form action="php/user/checkUser.php" method="POST">
+                <div class="form-group">
+                    <label for="userEmail">E-mail:</label>
+                    <input type="email" class="form-control" name="userEmail">
+                </div>
+                <div class="form-group">
+                    <label for="userPassword">Password:</label>
+                    <input type="password" class="form-control" name="userPassword">
+                </div>
+                <button type="submit" class="btn btn-dark" name="btnLogin">Login</button>
+                <div class="form-group">
+                    <br> Don't have a account?<a href="signup.html"> Sign Up here!</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
