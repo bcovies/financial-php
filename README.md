@@ -15,7 +15,7 @@
     + Very easy to use
 + View table with *live update* from a MySQL database
 
-v1.0 link: https://github.com/bruno-coviello-souto/financial-php/releases/tag/v1.0
+v1.0 link: 
 
 ## Version 2.0
 
@@ -24,4 +24,4 @@ v1.0 link: https://github.com/bruno-coviello-souto/financial-php/releases/tag/v1
 + More stable version
 + Still working on progress, but, functional
 
-v2.0 link: https://github.com/bruno-coviello-souto/financial-php/releases/tag/v2.0
+v2.0 link: 
