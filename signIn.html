@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In</title>
+  <!--Boostrap 4.5-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/html.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="p-2 bd-highlight ml-5">
+    <!-- Adicionar NOTA -->
+    <div class="container-fluid" id="validate-month">
+      <div class="form-row align-items-center">
+        <form method="POST" action="../phpAction/validarCadastro.php">
+          <h1>Cadastro</h1>
+
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" name="nome" required="required" class="form-control"
+              placeholder="João da Silva">
+          </div>
+
+          <div class="form-group">
+            <label for="usuario">Usuario:</label>
+            <input id="usuario" type="text" name="usuario" required="required" class="form-control"
+              placeholder="joao123">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input id="email" type="text" name="email" required="required" class="form-control"
+              placeholder="joao123@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="senha">Senha: </label>
+            <input id="senha" type="password" name="senha" required="required" class="form-control" placeholder="">
+          </div>
+          <input type="submit" name="btnCadastrar" value="Cadastrar" />
+          <p class="link">
+            Já tem conta?
+            <a href="logIn.html">Entre</a>
+        </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!--Boostrap 4.5-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/html.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!--Search script, tables scripts-->
+    <script src="../js/dataTables.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            $('#listar-usuario').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": {
+                    "url": "../phpAction/pesQGeral.php",
+                    "type": "POST"
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="p-2 bd-highlight ml-5">
+        <!-- Adicionar NOTA -->
+        <div class="container-fluid" id="validate-month">
+            <div class="form-row align-items-center">
+                <form method="POST" action="../phpAction/validarLogin.php">
+                    <h1>Cadastro</h1>
+
+                    <div class="form-group">
+                        <label for="usuário">Seu usuário</label>
+                        
+                        <input id="idPagador" name="usuario" required="required" type="text" placeholder="" />
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Sua senha</label>
+                        <input id="senha" name="senha" required="required" type="password" placeholder="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                        <label for="manterlogado">Manter-me logado</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnLogin" value="Logar" />
+                    </div>
+                    <p class="link">
+                        Ainda não tem conta?
+                        <a href="signIn.html">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
